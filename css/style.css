@@ -194,8 +194,66 @@ h2 {
   justify-content: space-between;
   margin-bottom: 30px;
 }
-ul {
+.list_section {
   padding-left: 0;
   margin: 0 auto;
   margin-top: 40px;
+}
+.last-section {
+  position: relative;
+  height: 610px;
+  margin-bottom: 170px;
+}
+.last-section::after {
+  content: " ";
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #828282;
+}
+.footer {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer > ul {
+  list-style: none;
+}
+.footer > ul > li {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+  height: 207px;
+  gap: 25px;
+}
+input[type="number"] {
+  height: 50px;
+  padding: 0px 10px;
+  gap: 10px;
+  border-radius: 4px 0px 0px 0px;
+  border: 1px solid #bcd0e5;
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 50px;
+}
+.title-form {
+  font-family: Gotham;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.list_title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 0;
 }
